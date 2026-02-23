@@ -27,3 +27,6 @@ node_modules/
 *.log
 tmp/
 temp/
+blog/wp-config.php
+blog/wp-config.php
+blog/wp-config.php
