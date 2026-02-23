@@ -28,12 +28,15 @@ ob_start();
             data-aos-delay="100">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-white h1 fw-bold">Dev Sharma</h2>
-                    <p class="text-white fw-bold font-size: 1.525rem !important;">
-                        I'm a passionate digital marketer expert in Jaipur, India, helping brands grow through SEO,
-                        social media, and paid campaigns.
+                    <h2 class="text-white display-3 fw-bold mb-4">Dev Sharma</h2>
+                    <p class="text-white lead mb-5 opacity-90">
+                        Passionate <strong>Digital Marketing Expert in Jaipur</strong> helping brands grow through data-driven SEO,
+                        social media, and high-converting paid campaigns.
                     </p>
-                    <a href="#about" class="btn-get-started">About Me</a>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="<?= url('/about-dev-sharma') ?>" class="btn-get-started rounded-pill px-5 py-3">About Me</a>
+                        <a href="#services" class="btn btn-outline-light rounded-pill px-5 py-3 fw-bold">My Services</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +123,7 @@ ob_start();
                         <span class="skill"><span>SEO</span> <i class="val">100%</i></span>
                         <div class="progress-bar-wrap">
                             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                aria-valuemax="100">
+                                aria-valuemax="100" style="background-color: var(--accent-color);">
                             </div>
                         </div>
                     </div><!-- End Skills Item -->
@@ -183,55 +186,35 @@ ob_start();
     </section><!-- /Skills Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Facts</h2>
-            <p>Over 5+ years of experience in digital marketing, managing 150+ campaigns, 100K+ organic reach, and
-                200+ satisfied clients globally</p>
-        </div><!-- End Section Title -->
-
+    <section id="stats" class="stats section py-5 light-background">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
+            <div class="row gy-4 text-center">
                 <div class="col-lg-3 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Satisfied Clients</p>
+                    <div class="stats-item p-4 bg-white rounded shadow-sm">
+                        <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <p class="mb-0 text-muted">Satisfied Clients</p>
                     </div>
-                </div><!-- End Stats Item -->
-
+                </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Successful Campaigns</p>
+                    <div class="stats-item p-4 bg-white rounded shadow-sm">
+                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <p class="mb-0 text-muted">Successful Campaigns</p>
                     </div>
-                </div><!-- End Stats Item -->
-
+                </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="100000" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Organic Reach</p>
+                    <div class="stats-item p-4 bg-white rounded shadow-sm">
+                        <span data-purecounter-start="0" data-purecounter-end="100000" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <p class="mb-0 text-muted">Organic Reach</p>
                     </div>
-                </div><!-- End Stats Item -->
-
+                </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Experience in Digital Marketing</p>
+                    <div class="stats-item p-4 bg-white rounded shadow-sm">
+                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <p class="mb-0 text-muted">Years Experience</p>
                     </div>
-                </div><!-- End Stats Item -->
-
+                </div>
             </div>
-
         </div>
-
     </section><!-- /Stats Section -->
 
     <!-- Services Section -->
@@ -257,7 +240,7 @@ ob_start();
                             </svg>
                             <i class="bi bi-activity"></i>
                         </div>
-                        <a href="#" class="stretched-link">
+                        <a href="<?= url('/seo-services-in-jaipur') ?>" class="stretched-link">
                             <h3>SEO Optimization</h3>
                         </a>
                         <p>Boost your website's visibility with on-page & off-page SEO strategies that bring organic
@@ -275,7 +258,7 @@ ob_start();
                             </svg>
                             <i class="bi bi-broadcast"></i>
                         </div>
-                        <a href="#" class="stretched-link">
+                        <a href="<?= url('/social-media-marketing-agency-jaipur') ?>" class="stretched-link">
                             <h3>Social Media Marketing</h3>
                         </a>
                         <p>From Instagram to LinkedIn — we build your brand presence, engage your audience, and
@@ -311,7 +294,7 @@ ob_start();
                             </svg>
                             <i class="bi bi-bounding-box-circles"></i>
                         </div>
-                        <a href="#" class="stretched-link">
+                        <a href="<?= url('/content-writing-services-jaipur') ?>" class="stretched-link">
                             <h3>Content Marketing</h3>
                         </a>
                         <p>Attract, inform, and convert with blog articles, ad copy, social media content, and
@@ -329,8 +312,8 @@ ob_start();
                             </svg>
                             <i class="bi bi-calendar4-week icon"></i>
                         </div>
-                        <a href="#" class="stretched-link">
-                            <h3>E-commerce Marketing</h3>
+                        <a href="<?= url('/google-ads-agency-jaipur') ?>" class="stretched-link">
+                            <h3>Local Marketing</h3>
                         </a>
                         <p>Power up your product sales with strategic campaigns, conversion-focused pages, and
                             remarketing tactics on all major platforms.</p>
@@ -362,57 +345,83 @@ ob_start();
     </section><!-- /Services Section -->
 
     <!-- Packages -->
-    <section id="digital-marketing-packages" class="section py-5">
+    <section id="digital-marketing-packages" class="section py-5 light-background">
         <div class="container section-title" data-aos="fade-up">
             <h2>Our Digital Marketing Packages</h2>
+            <p>Affordable and result-oriented SEO plans for every business stage.</p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+            <div class="row g-4 justify-content-center align-items-stretch">
+                <!-- Small Business SEO -->
+                <div class="col-lg-4 col-md-6">
                     <div class="seo-card">
                         <div class="sero-card-header">
                             <div class="seo-icon">
                                 <i class="bi bi-shop"></i>
                             </div>
                             <h4 class="fw-bold">Small Business SEO</h4>
-                            <p class="mb-1"><strong>10,000 INR</strong> Monthly</p>
-                            <p class="">Local businesses & startups</p>
+                            <p class="mb-1 text-primary h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="small text-muted">Perfect for local shops & startups</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 5 Target Keywords</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Google Map (GMB) Setup</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Local Directory Listings</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Monthly Progress Report</li>
+                            <li><i class="bi bi-check-circle-fill"></i> On-Page SEO Optimization</li>
+                        </ul>
                         <button class="seo-btn" onclick="openWhatsApp('Small Business SEO', '10,000 INR')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Basic SEO Plan
+                            <i class="bi bi-whatsapp"></i> Get Started
                         </button>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="seo-card">
+                <!-- Midsize Business SEO -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="seo-card popular">
+                        <div class="popular-badge">Most Popular</div>
                         <div class="sero-card-header">
                             <div class="seo-icon">
                                 <i class="bi bi-building"></i>
                             </div>
                             <h4 class="fw-bold">Midsize Business SEO</h4>
-                            <p class="mb-1"><strong>20,000 INR</strong> Monthly</p>
-                            <p>Growing businesses aiming for broader</p>
+                            <p class="mb-1 text-primary h4 fw-bold">20,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="small text-muted">For growing businesses aiming higher</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Up to 15 Target Keywords</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced Competitor Analysis</li>
+                            <li><i class="bi bi-check-circle-fill"></i> High-Quality Backlink Building</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Weekly Performance Tracking</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Content Strategy Audit</li>
+                        </ul>
                         <button class="seo-btn" onclick="openWhatsApp('Midsize Business SEO', '20,000 INR')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Advanced SEO Plan
+                            <i class="bi bi-whatsapp"></i> Choose Advanced
                         </button>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <!-- Large Business SEO -->
+                <div class="col-lg-4 col-md-6">
                     <div class="seo-card">
                         <div class="sero-card-header">
                             <div class="seo-icon">
                                 <i class="bi bi-cart"></i>
                             </div>
                             <h4 class="fw-bold">Large Business SEO</h4>
-                            <p class="mb-1"><strong>30,000 INR</strong> Monthly</p>
-                            <p>Established businesses targeting national-level visibility</p>
+                            <p class="mb-1 text-primary h4 fw-bold">30,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="small text-muted">National & Ecommerce visibility</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> 30+ Target Keywords</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Ecommerce/National SEO</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Technical SEO Deep Audit</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Priority Support & Calls</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Advanced ROI Tracking</li>
+                        </ul>
                         <button class="seo-btn" onclick="openWhatsApp('Large Business SEO', '30,000 INR')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Ecommerce SEO Plan
+                            <i class="bi bi-whatsapp"></i> Go National
                         </button>
                     </div>
                 </div>
@@ -421,59 +430,84 @@ ob_start();
         </div>
     </section>
 
-    <section id="" class="section py-5">
+    <section class="section py-5">
         <div class="container section-title" data-aos="fade-up">
-            <h2>Other Packages</h2>
+            <h2>Specialized Marketing Packages</h2>
+            <p>Focused strategies for Ads, Social Media, and Content growth.</p>
         </div>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <!-- PPC Ads -->
+                <div class="col-lg-4 col-md-6">
                     <div class="seo-card">
                         <div class="sero-card-header">
                             <div class="seo-icon">
-                                <i class="bi bi-shop"></i>
+                                <i class="bi bi-lightning-charge"></i>
                             </div>
-                            <h4 class="fw-bold">PPC (Google Ads) Package</h4>
-                            <p class="mb-1"><strong>10% - 20% of your monthly ad spend</strong></p>
-                            <p class="">Maximize your ROI with expertly managed Google Ads campaigns!</p>
+                            <h4 class="fw-bold">PPC (Google Ads)</h4>
+                            <p class="mb-1 text-primary h4 fw-bold">10% - 20% <span class="text-muted small fw-normal">ad spend</span></p>
+                            <p class="small text-muted">Maximize ROI with expert management</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Search & Display Campaigns</li>
+                            <li><i class="bi bi-check-circle-fill"></i> ROI-Focused Keyword Targeting</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Professional Ad Copywriting</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Daily Performance Monitoring</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Remarketing & Lead Tracking</li>
+                        </ul>
                         <button class="seo-btn"
                             onclick="openWhatsApp('PPC (Google Ads) Package', '10% - 20% of ad spend')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Hire me
+                            <i class="bi bi-whatsapp"></i> Get Leads Now
                         </button>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <!-- Social Media -->
+                <div class="col-lg-4 col-md-6">
                     <div class="seo-card">
                         <div class="sero-card-header">
                             <div class="seo-icon">
-                                <i class="bi bi-building"></i>
+                                <i class="bi bi-share"></i>
                             </div>
-                            <h4 class="fw-bold">Social Media (SMM, SMO) Package</h4>
-                            <p class="mb-1"><strong>15,000 INR</strong> Monthly</p>
-                            <p>Boost your brand awareness & engagement on social platforms</p>
+                            <h4 class="fw-bold">Social Media (SMM)</h4>
+                            <p class="mb-1 text-primary h4 fw-bold">15,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="small text-muted">Boost engagement & brand awareness</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> FB, Insta & LinkedIn Management</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Custom Creative Post Designs</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Reels & Short Video Strategy</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Community Management</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Follower Growth Tactics</li>
+                        </ul>
                         <button class="seo-btn"
                             onclick="openWhatsApp('Social Media (SMM, SMO) Package', '15,000 INR')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Hire me
+                            <i class="bi bi-whatsapp"></i> Grow Socially
                         </button>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <!-- Content Writing -->
+                <div class="col-lg-4 col-md-6">
                     <div class="seo-card">
                         <div class="sero-card-header">
                             <div class="seo-icon">
-                                <i class="bi bi-cart"></i>
+                                <i class="bi bi-pencil-square"></i>
                             </div>
-                            <h4 class="fw-bold">Content Writing Packages</h4>
-                            <p class="mb-1"><strong>10,000 INR</strong> Monthly</p>
-                            <p>Drive traffic & authority with powerful content</p>
+                            <h4 class="fw-bold">Content Writing</h4>
+                            <p class="mb-1 text-primary h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="small text-muted">Drive traffic with powerful content</p>
                         </div>
+                        <ul class="card-features">
+                            <li><i class="bi bi-check-circle-fill"></i> SEO-Optimized Blog Posts</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Website Copywriting</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Product & Landing Page Content</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Informative Guest Articles</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Keyword-Rich Content Strategy</li>
+                        </ul>
                         <button class="seo-btn" onclick="openWhatsApp('Content Writing Package', '10,000 INR')">
-                            <i class="fa fa-whatsapp whatsapp-icon mt-0"></i> Hire me
+                            <i class="bi bi-whatsapp"></i> Hire Expert
                         </button>
                     </div>
                 </div>

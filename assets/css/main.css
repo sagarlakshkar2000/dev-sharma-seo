@@ -12,29 +12,30 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Outfit",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Inter",  sans-serif;
+  --nav-font: "Outfit",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #34b7a7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Global Colors */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #34b7a7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #ffffff;
+  --default-color: #333333;
+  --heading-color: #111111;
+  --accent-color: #f9b400; /* Modern Gold */
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+  --light-gray: #f8f9fa;
+}
+
+/* Nav Menu Colors */
+:root {
+  --nav-color: #111111;
+  --nav-hover-color: #f9b400;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #111111;
+  --nav-dropdown-hover-color: #f9b400;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -64,16 +65,17 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  line-height: 1.6;
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--nav-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -235,10 +237,10 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
+    padding: 18px 15px;
     font-size: 15px;
-    padding: 0 2px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -253,6 +255,10 @@ h6 {
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
+  }
+
+  .navmenu li:last-child a {
+    padding-right: 0;
   }
 
   .navmenu>ul>li>a:before {
@@ -674,12 +680,12 @@ section,
   position: absolute;
   display: block;
   width: 50px;
-  height: 3px;
+  height: 4px;
   background: var(--accent-color);
-  left: 0;
-  right: 0;
+  left: 50%;
   bottom: 0;
-  margin: auto;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .section-title p {
@@ -748,7 +754,8 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
+  background: #e5a500;
+  box-shadow: 0 5px 15px rgba(249, 180, 0, 0.4);
 }
 
 @media (max-width: 768px) {

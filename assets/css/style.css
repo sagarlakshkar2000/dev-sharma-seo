@@ -1,48 +1,109 @@
+/* Pricing Cards */
 .seo-card {
-    background-color: #f9b400;
-    border-radius: 12px;
-    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 40px 30px;
     text-align: center;
-    transition: all 0.3s ease;
-    height: 328px;
-
-
+    transition: all 0.4s ease;
+    height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-  }
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
-  .seo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
+.seo-card.popular {
+    border-color: #f9b400;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(249, 180, 0, 0.15);
+}
 
-  .seo-icon {
-    width: 60px;
-    height: 60px;
-    background: white;
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f9b400;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.seo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.seo-icon {
+    width: 70px;
+    height: 70px;
+    background: #fff4d8;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px;
-    font-size: 30px;
+    margin: 0 auto 25px;
+    font-size: 32px;
     color: #f9b400;
-  }
+    transition: 0.3s;
+}
 
-  .seo-btn {
-    margin-top: 20px;
-    padding: 8px 20px;
+.seo-card:hover .seo-icon {
+    background: #f9b400;
+    color: #fff;
+}
+
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 35px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-features li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-features li i {
+    color: #25D366;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.seo-btn {
+    padding: 12px 25px;
     background: #25D366;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
+    font-weight: 600;
     text-decoration: none;
-    display: inline-block;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+    width: 100%;
+}
 
-  .seo-btn:hover {
+.seo-btn:hover {
+    background: #128C7E;
     color: #fff;
-    background: #25D366;
-    transition: background 0.3s ease;
-  }
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+@media (max-width: 991px) {
+    .seo-card.popular {
+        transform: none;
+    }
+}

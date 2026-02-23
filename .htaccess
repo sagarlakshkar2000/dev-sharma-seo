@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /
+# RewriteBase /
 # If on local, you might need: RewriteBase /dev-sharma-seo/
 # For production (Hostinger root), use: RewriteBase /
 
@@ -19,3 +19,20 @@ RewriteRule ^blog/?$ blog.php [R=301,L]
 # Skips: direct files (.php, .js, .css, images)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)/?$ blog/post.php [QSA,L]
+
+# Disable MultiViews to prevent conflicts with extensionless rules
+Options -MultiViews
+
+# Specific rules for better compatibility
+RewriteRule ^about$ about.php [L]
+RewriteRule ^content-writing-services-jaipur$ content-writing-services-jaipur.php [L]
+RewriteRule ^local-seo-services-jaipur$ local-seo-services-jaipur.php [L]
+RewriteRule ^seo-services-in-jaipur$ seo-services-in-jaipur.php [L]
+RewriteRule ^social-media-marketing-agency-jaipur$ social-media-marketing-agency-jaipur.php [L]
+RewriteRule ^website-design-company-jaipur$ website-design-company-jaipur.php [L]
+RewriteRule ^google-ads-agency-jaipur$ google-ads-agency-jaipur.php [L]
+
+# Generic rule to hide .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
