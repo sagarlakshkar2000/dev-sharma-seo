@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+# If on local, you might need: RewriteBase /dev-sharma-seo/
+# For production (Hostinger root), use: RewriteBase /
+
+# Set DirectoryIndex
+DirectoryIndex index.php index.html
+
+# Redirect blog.html to blog.php permanently
+RewriteRule ^blog\.html$ blog.php [R=301,L]
+
+# Redirect /blog/ (WordPress homepage) → our custom blog listing page
+RewriteRule ^blog/?$ blog.php [R=301,L]
+
+# ── Blog post routing ─────────────────────────────────────────────────────────
+# Route /blog/<slug>/ → blog/post.php (YOUR layout via WP REST API)
+# Skips: wp-admin, wp-json, wp-content, wp-includes, wp-login, wp-config, wp-cron
+# Skips: direct files (.php, .js, .css, images)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blog/([^/]+)/?$ blog/post.php [QSA,L]

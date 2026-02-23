@@ -1,0 +1,31 @@
+# ── Custom rules — preserved across WordPress permalink updates ───────────────
+RewriteEngine On
+RewriteBase /blog/
+
+# 1. Redirect direct browser visits to /blog/ → our custom listing page
+# Try to make this generic
+RewriteCond %{THE_REQUEST} \s.*/blog/?\s [NC]
+RewriteRule ^$ /blog.php [R=301,L]
+
+# 2. Route /blog/<slug>/ → our custom post layout (bypasses WP default theme)
+#    Skips: real files (wp-login.php, .php files etc) and real directories (wp-admin/, wp-content/)
+#    Skips: anything starting with wp- (wp-json, wp-cron etc)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(?!wp-)([a-zA-Z0-9_-]+)/?$ post.php [QSA,L]
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /blog/index.php [L]
+</IfModule>
+
+# END WordPress
