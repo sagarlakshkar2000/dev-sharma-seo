@@ -191,25 +191,25 @@ ob_start();
             <div class="row gy-4 text-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
                         <p class="mb-0 text-muted">Satisfied Clients</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
                         <p class="mb-0 text-muted">Successful Campaigns</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="100000" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="100000" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
                         <p class="mb-0 text-muted">Organic Reach</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-primary"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
                         <p class="mb-0 text-muted">Years Experience</p>
                     </div>
                 </div>
@@ -361,7 +361,7 @@ ob_start();
                                 <i class="bi bi-shop"></i>
                             </div>
                             <h4 class="fw-bold">Small Business SEO</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
                             <p class="small text-muted">Perfect for local shops & startups</p>
                         </div>
                         <ul class="card-features">
@@ -386,7 +386,7 @@ ob_start();
                                 <i class="bi bi-building"></i>
                             </div>
                             <h4 class="fw-bold">Midsize Business SEO</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">20,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">20,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
                             <p class="small text-muted">For growing businesses aiming higher</p>
                         </div>
                         <ul class="card-features">
@@ -410,7 +410,7 @@ ob_start();
                                 <i class="bi bi-cart"></i>
                             </div>
                             <h4 class="fw-bold">Large Business SEO</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">30,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">30,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
                             <p class="small text-muted">National & Ecommerce visibility</p>
                         </div>
                         <ul class="card-features">
@@ -446,7 +446,7 @@ ob_start();
                                 <i class="bi bi-lightning-charge"></i>
                             </div>
                             <h4 class="fw-bold">PPC (Google Ads)</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">10% - 20% <span class="text-muted small fw-normal">ad spend</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">10% - 20% <span class="text-muted small fw-normal">ad spend</span></p>
                             <p class="small text-muted">Maximize ROI with expert management</p>
                         </div>
                         <ul class="card-features">
@@ -471,7 +471,7 @@ ob_start();
                                 <i class="bi bi-share"></i>
                             </div>
                             <h4 class="fw-bold">Social Media (SMM)</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">15,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">15,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
                             <p class="small text-muted">Boost engagement & brand awareness</p>
                         </div>
                         <ul class="card-features">
@@ -496,7 +496,7 @@ ob_start();
                                 <i class="bi bi-pencil-square"></i>
                             </div>
                             <h4 class="fw-bold">Content Writing</h4>
-                            <p class="mb-1 text-primary h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
+                            <p class="mb-1 text-accent h4 fw-bold">10,000 INR <span class="text-muted small fw-normal">/ mo</span></p>
                             <p class="small text-muted">Drive traffic with powerful content</p>
                         </div>
                         <ul class="card-features">

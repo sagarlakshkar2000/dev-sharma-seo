@@ -14,10 +14,10 @@
 }
 
 .seo-card.popular {
-    border-color: #f9b400;
+    border-color: #6366f1;
     transform: scale(1.05);
     z-index: 2;
-    box-shadow: 0 10px 30px rgba(249, 180, 0, 0.15);
+    box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.1), 0 10px 10px -5px rgba(99, 102, 241, 0.04);
 }
 
 .popular-badge {
@@ -25,37 +25,39 @@
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #f9b400;
+    background: #6366f1;
     color: #fff;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .seo-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .seo-icon {
     width: 70px;
     height: 70px;
-    background: #fff4d8;
-    border-radius: 50%;
+    background: #f5f3ff;
+    border-radius: 12px; /* Smoother squircle-like feel */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 25px;
     font-size: 32px;
-    color: #f9b400;
-    transition: 0.3s;
+    color: #6366f1;
+    transition: 0.3s ease;
 }
 
 .seo-card:hover .seo-icon {
-    background: #f9b400;
+    background: #6366f1;
     color: #fff;
+    transform: rotate(5deg);
 }
 
 .card-features {

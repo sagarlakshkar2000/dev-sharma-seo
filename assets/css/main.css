@@ -12,30 +12,30 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Outfit",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --heading-font: "Inter",  sans-serif;
-  --nav-font: "Outfit",  sans-serif;
+  --default-font: "Plus Jakarta Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Plus Jakarta Sans",  sans-serif;
+  --nav-font: "Plus Jakarta Sans",  sans-serif;
 }
 
 /* Global Colors */
 :root {
   --background-color: #ffffff;
-  --default-color: #333333;
-  --heading-color: #111111;
-  --accent-color: #f9b400; /* Modern Gold */
+  --default-color: #334155; /* Slate 700 */
+  --heading-color: #0f172a; /* Midnight Slate 900 */
+  --accent-color: #6366f1; /* Modern Indigo */
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
-  --light-gray: #f8f9fa;
+  --light-gray: #f8fafc; /* Slate 50 */
 }
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: #111111;
-  --nav-hover-color: #f9b400;
+  --nav-color: #0f172a;
+  --nav-hover-color: #6366f1;
   --nav-mobile-background-color: #ffffff;
   --nav-dropdown-background-color: #ffffff;
-  --nav-dropdown-color: #111111;
-  --nav-dropdown-hover-color: #f9b400;
+  --nav-dropdown-color: #0f172a;
+  --nav-dropdown-hover-color: #6366f1;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -186,6 +186,18 @@ h6 {
   color: var(--accent-color);
 }
 
+.text-primary {
+  color: var(--accent-color) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--accent-color) !important;
+}
+
 .header .header-social-links a i {
   line-height: 0px;
 }
@@ -237,15 +249,16 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
-    font-size: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
     font-family: var(--nav-font);
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    letter-spacing: 0.2px;
     position: relative;
   }
 
@@ -754,8 +767,8 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: #e5a500;
-  box-shadow: 0 5px 15px rgba(249, 180, 0, 0.4);
+  background: #4f46e5;
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -771,6 +784,15 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.header .sitename {
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #0f172a 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -1040,6 +1062,36 @@ section,
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+}
+
+.footer {
+  background-color: #0f172a !important; /* Midnight slate */
+  color: #94a3b8;
+  padding: 60px 0 30px;
+}
+
+.footer .sitename {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.footer .social-links a {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-3px);
 }
 
 .services .service-item .icon {
