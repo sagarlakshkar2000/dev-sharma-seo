@@ -30,16 +30,16 @@ ob_start();
                 <div class="col-lg-12 content">
                     <h2>🚀 Professional SEO Services That Rank Your Business on Google</h2>
                     <p class="py-3">
-                        If your website is not showing on Google’s first page, you are losing customers every day. At Dev Sharma, we provide result-driven <strong>SEO services in Jaipur</strong>, Rajasthan and across India that increase website traffic, improve search rankings, and generate real business leads.
+                        <strong>If</strong> your website is not showing on Google’s first page, you are losing customers every day. At Dev Sharma, we provide result-driven <strong>SEO services in Jaipur</strong>, Rajasthan and across India that increase website traffic, improve search rankings, and generate real business leads.
                     </p>
                     <p>
-                        Search Engine Optimization (SEO) is the most powerful digital marketing strategy for long-term growth. Unlike paid ads, SEO keeps bringing traffic even when you stop spending money. Our expert SEO strategies help local businesses, ecommerce stores, startups, and service providers rank higher and grow faster.
+                        <strong>Search Engine Optimization (SEO)</strong> is the most powerful digital marketing strategy for long-term growth. Unlike paid ads, SEO keeps bringing traffic even when you stop spending money. Our expert SEO strategies help local businesses, ecommerce stores, startups, and service providers rank higher and grow faster.
                     </p>
                     <p>
                         Whether you are a small business in Jaipur, a startup in Rajasthan, or an online store selling across India, our <strong>SEO expert in Jaipur</strong> are designed to deliver measurable results.
                     </p>
                     <p> 
-                        For best results, SEO works together with our <a href="https://devsharma.site/website-design-company-jaipur">Website Design</a> & Development service to create fast, mobile-friendly websites. High-quality blogs from our <a href="https://devsharma.site/content-writing-services-jaipur">Content Writing service</a> improve rankings, while our <a href="https://devsharma.site/google-ads-agency-jaipur">Google Ads Service</a> helps you get instant leads while SEO grows. For local businesses, our <a href="https://devsharma.site/local-seo-services-jaipur">Local SEO Service</a> helps rank your business in Google Maps and “near me” searches.
+                        <strong>For best results</strong>, SEO works together with our <a href="https://devsharma.site/website-design-company-jaipur">Website Design</a> & Development service to create fast, mobile-friendly websites. High-quality blogs from our <a href="https://devsharma.site/content-writing-services-jaipur">Content Writing service</a> improve rankings, while our <a href="https://devsharma.site/google-ads-agency-jaipur">Google Ads Service</a> helps you get instant leads while SEO grows. For local businesses, our <a href="https://devsharma.site/local-seo-services-jaipur">Local SEO Service</a> helps rank your business in Google Maps and “near me” searches.
                     </p>
                 </div>
             </div>
