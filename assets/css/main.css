@@ -249,7 +249,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 10px 15px;
+    padding: 4px 8px;
     font-size: 14px;
     font-family: var(--nav-font);
     font-weight: 600;
@@ -763,7 +763,6 @@ section,
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 30px;
 }
 
 .hero .btn-get-started:hover {
