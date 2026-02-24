@@ -71,7 +71,7 @@ ob_start();
                     <p class="mt-3">Today, more than 90% of customers search online before buying. If your competitors are ranking and you are not, they are getting your customers.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/seo_services_image.jpg') ?>" class="img-fluid rounded shadow" alt="SEO Services Jaipur">
+                    <img src="<?= asset('assets/img/seo_services_image.jpeg') ?>" class="img-fluid rounded shadow" alt="SEO Services Jaipur">
                 </div>
             </div>
         </div>
@@ -157,6 +157,9 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Locations & Industries -->
     <section class="section">

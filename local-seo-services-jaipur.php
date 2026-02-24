@@ -72,7 +72,7 @@ ob_start();
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/local_seo_image.jpg') ?>" class="img-fluid rounded shadow" alt="Local SEO Services Jaipur">
+                    <img src="<?= asset('assets/img/local_seo_image.jpeg') ?>" class="img-fluid rounded shadow" alt="Local SEO Services Jaipur">
                 </div>
             </div>
         </div>
@@ -166,6 +166,9 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Process Section -->
     <section class="section">

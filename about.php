@@ -98,37 +98,37 @@ ob_start();
             <div class="row g-4 text-center">
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-lock fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
                         <h6>Secure account management</h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-megaphone fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-shield-shaded fs-1 text-primary mb-3"></i>
                         <h6>Safe ad campaign handling</h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-cloud-arrow-up fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-cloud-check fs-1 text-primary mb-3"></i>
                         <h6>Website backup & protection</h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-file-earmark-lock fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-shield fs-1 text-primary mb-3"></i>
                         <h6>Confidential client information</h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-gem fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-award fs-1 text-primary mb-3"></i>
                         <h6>Ethical SEO practices</h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <div class="p-4 border rounded h-100 shadow-sm hover-elevate">
-                        <i class="bi bi-bug-slash fs-1 text-primary mb-3"></i>
+                        <i class="bi bi-patch-check fs-1 text-primary mb-3"></i>
                         <h6>No spam or black-hat</h6>
                     </div>
                 </div>

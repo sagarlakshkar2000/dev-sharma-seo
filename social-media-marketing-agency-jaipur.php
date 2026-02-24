@@ -65,7 +65,7 @@ ob_start();
                     <p>Businesses that invest in social media grow faster than those that don’t.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/social_media_image.jpg') ?>" class="img-fluid rounded shadow" alt="Social Media Marketing Jaipur">
+                    <img src="<?= asset('assets/img/social_media_image.jpeg') ?>" class="img-fluid rounded shadow" alt="Social Media Marketing Jaipur">
                 </div>
             </div>
         </div>
@@ -155,6 +155,9 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Process -->
     <section class="section">

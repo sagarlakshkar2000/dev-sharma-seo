@@ -65,7 +65,7 @@ ob_start();
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/web_design_image.jpg') ?>" class="img-fluid rounded shadow" alt="Website Design Services Jaipur">
+                    <img src="<?= asset('assets/img/web_design_image.jpeg') ?>" class="img-fluid rounded shadow" alt="Website Design Services Jaipur">
                 </div>
             </div>
         </div>
@@ -140,6 +140,10 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
+
 
     <!-- Process -->
     <section class="section">

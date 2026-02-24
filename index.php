@@ -57,7 +57,7 @@ ob_start();
             <div class="row gy-5 align-items-center">
                 <div class="col-lg-5">
                     <div class="position-relative">
-                        <img src="<?= asset('assets/img/WhatsApp Image 2025-06-09 at 3.02.15 PM.jpeg') ?>" class="img-fluid rounded-4 shadow-lg" alt="Dev Sharma - SEO Expert Jaipur">
+                        <img src="<?= asset('assets/img/myimage.jpeg') ?>" class="img-fluid rounded-4 shadow-lg" alt="Dev Sharma - SEO Expert Jaipur">
                         <div class="experience-badge bg-primary text-white p-3 rounded-3 position-absolute bottom-0 end-0 m-3 shadow">
                             <span class="d-block h4 fw-bold mb-0">5+ Years</span>
                             <span class="small">Experience</span>
@@ -188,37 +188,7 @@ ob_start();
 
     </section><!-- /Skills Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section py-5 light-background">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row gy-4 text-center">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
-                        <p class="mb-0 text-muted">Satisfied Clients</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
-                        <p class="mb-0 text-muted">Successful Campaigns</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="100000" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
-                        <p class="mb-0 text-muted">Organic Reach</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item p-4 bg-white rounded shadow-sm">
-                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter display-6 fw-bold text-accent"></span>
-                        <p class="mb-0 text-muted">Years Experience</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- /Stats Section -->
+   <?php include 'components/stats-section.php'; ?>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -483,137 +453,7 @@ ob_start();
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <p>What our clients say about working with us in digital marketing and growth campaigns</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                    {
-                        "loop": true,
-                        "speed": 600,
-                        "autoplay": {
-                            "delay": 5000
-                        },
-                        "slidesPerView": "auto",
-                        "pagination": {
-                            "el": ".swiper-pagination",
-                            "type": "bullets",
-                            "clickable": true
-                        }
-                    }
-                </script>
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="<?= asset('assets/img/testimonials/testimonials-1.jpg') ?>" class="testimonial-img" alt="">
-                            <h3>Saul Goodman</h3>
-                            <h4>Ceo &amp; Founder</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Dev transformed our brand visibility with SEO and Facebook Ads. In just 2
-                                    months, we saw a 3x jump in traffic and 50% more sales.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="<?= asset('assets/img/testimonials/testimonials-2.jpg') ?>" class="testimonial-img" alt="">
-                            <h3>Sara Wilsson</h3>
-                            <h4>Designer</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>His digital marketing strategies helped us generate consistent leads.
-                                    Professional, on-time, and result-oriented.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="<?= asset('assets/img/testimonials/testimonials-3.jpg') ?>" class="testimonial-img" alt="">
-                            <h3>Jena Karlis</h3>
-                            <h4>Store Owner</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>From Social Media marketing to landing pages, Dev handled it all. My webinar
-                                    signups grew by 200% in a month!.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="<?= asset('assets/img/testimonials/testimonials-4.jpg') ?>" class="testimonial-img" alt="">
-                            <h3>Matt Brandon</h3>
-                            <h4>Freelancer</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Great experience! Google Ads optimization helped reduce CPC by 40% and improve
-                                    quality leads.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <img src="<?= asset('assets/img/testimonials/testimonials-5.jpg') ?>" class="testimonial-img" alt="">
-                            <h3>John Larson</h3>
-                            <h4>Entrepreneur</h4>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                <span>Dev managed our Instagram and influencer strategy — we hit 25K followers in
-                                    under 3 months with high engagement.</span>
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-
-    </section><!-- /Testimonials Section -->
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">

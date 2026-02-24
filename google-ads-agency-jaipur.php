@@ -64,7 +64,7 @@ ob_start();
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/ppc_ads_image.jpg') ?>" class="img-fluid rounded shadow" alt="Google Ads Agency Jaipur">
+                    <img src="<?= asset('assets/img/ppc_ads_image.jpeg') ?>" class="img-fluid rounded shadow" alt="Google Ads Agency Jaipur">
                 </div>
             </div>
         </div>
@@ -139,6 +139,9 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Process -->
     <section class="section">

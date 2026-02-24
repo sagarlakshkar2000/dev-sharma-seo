@@ -63,7 +63,7 @@ ob_start();
                     <p>Today, customers research before buying. Good content makes your business look professional and trustworthy.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="<?= asset('assets/img/blog_writing_image.jpg') ?>" class="img-fluid rounded shadow" alt="Content Writing Services Jaipur">
+                    <img src="<?= asset('assets/img/blog_writing_image.jpeg') ?>" class="img-fluid rounded shadow" alt="Content Writing Services Jaipur">
                 </div>
             </div>
         </div>
@@ -177,6 +177,9 @@ ob_start();
             </div>
         </div>
     </section>
+
+    <?php include 'components/stats-section.php'; ?>
+    <?php include 'components/testimonials-section.php'; ?>
 
     <!-- Process -->
     <section class="section">
