@@ -167,7 +167,7 @@ ob_start();
             <div class="row gy-4">
                 <div class="col-lg-6">
                     <h3>📍 Local SEO Services in Rajasthan</h3>
-                    <p>If you want customers from Jaipur, Ajmer, Kota, Alwar, Udaipur, or nearby areas, our local SEO services will help your business rank in Google Maps and local searches.</p>
+                    <p>If you want customers from Jaipur, Ajmer, Kota, Alwar, Udaipur, or nearby areas, our <a href="https://devsharma.site/local-seo-services-jaipur">local SEO services </a> will help your business rank in Google Maps and local searches.</p>
                     <p>We optimize your Google Business Profile, add local keywords, manage reviews, and improve location rankings so customers find you easily.</p>
                 </div>
                 <div class="col-lg-6">
