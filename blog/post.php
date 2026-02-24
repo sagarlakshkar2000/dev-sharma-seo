@@ -887,6 +887,20 @@ ob_start();
 <div class="bd-progress-bar" id="bdProgress"></div>
 
 <div class="bd-wrap">
+    <!-- Breadcrumb -->
+    <div class="bd-breadcrumb">
+        <div class="bd-breadcrumb-inner">
+            <a href="<?= url('/') ?>">Home</a>
+            <span class="bd-sep">›</span>
+            <a href="<?= url('/blog.php') ?>">Blog</a>
+            <?php if (!empty($cats)): ?>
+                <span class="bd-sep">›</span>
+                <a href="<?= url('/blog.php') ?>"><?= htmlspecialchars($cats[0]['name']) ?></a>
+            <?php endif; ?>
+            <span class="bd-sep">›</span>
+            <span><?= htmlspecialchars(strip_tags($post['title']['rendered'])) ?></span>
+        </div>
+    </div>
 
     <!-- Hero -->
     <div class="bd-hero">
@@ -936,21 +950,6 @@ ob_start();
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    <!-- Breadcrumb -->
-    <div class="bd-breadcrumb">
-        <div class="bd-breadcrumb-inner">
-            <a href="<?= url('/') ?>">Home</a>
-            <span class="bd-sep">›</span>
-            <a href="<?= url('/blog.php') ?>">Blog</a>
-            <?php if (!empty($cats)): ?>
-                <span class="bd-sep">›</span>
-                <a href="<?= url('/blog.php') ?>"><?= htmlspecialchars($cats[0]['name']) ?></a>
-            <?php endif; ?>
-            <span class="bd-sep">›</span>
-            <span><?= htmlspecialchars(strip_tags($post['title']['rendered'])) ?></span>
         </div>
     </div>
 
