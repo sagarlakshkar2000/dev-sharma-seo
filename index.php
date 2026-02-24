@@ -9,7 +9,7 @@ ob_start();
 ?>
 
 <main class="main">
-dev
+
     <!-- Hero Section -->
     <section id="hero" class="hero section" style="position: relative; overflow: hidden;">
 
