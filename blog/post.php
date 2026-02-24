@@ -73,13 +73,23 @@ $readingTime = max(1, ceil($wordCount / 200));
 // Post content
 $postContent = $post['content']['rendered'];
 
-// Related posts (same first category)
+// Related posts (same first category, fallback to recent)
 $relatedPosts = [];
 if (!empty($cats)) {
     $catId = $cats[0]['id'];
-    $related = wp_get('/posts?categories=' . $catId . '&exclude=' . $postId . '&per_page=3&_embed');
+    $related = wp_get('/posts?categories=' . $catId . '&exclude=' . $postId . '&per_page=10&_embed');
     $relatedPosts = $related ?? [];
 }
+
+// Fallback logic: if less than 6 related, fill with recent posts
+if (count($relatedPosts) < 6) {
+    $excludeIds = array_merge([$postId], array_column($relatedPosts, 'id'));
+    $recent = wp_get('/posts?per_page=10&exclude=' . implode(',', $excludeIds) . '&_embed');
+    if ($recent) {
+        $relatedPosts = array_merge($relatedPosts, $recent);
+    }
+}
+$relatedPosts = array_slice($relatedPosts, 0, 6);
 
 // Comments
 $comments    = wp_get('/comments?post=' . $postId . '&per_page=20&order=asc') ?? [];
@@ -103,7 +113,7 @@ ob_start();
     }
 
     .bd-wrap {
-        font-family: 'Inter', 'Roboto', sans-serif;
+        font-family: 'Open Sans', 'Onest', sans-serif;
         color: #1a1a2e;
         background: #fff;
     }
@@ -414,6 +424,7 @@ ob_start();
 
     /* ── Article content ── */
     .bd-article h2 {
+        font-family: 'Onest', sans-serif;
         font-size: 1.55rem;
         font-weight: 700;
         margin: 2.2rem 0 .9rem;
@@ -423,6 +434,7 @@ ob_start();
     }
 
     .bd-article h3 {
+        font-family: 'Onest', sans-serif;
         font-size: 1.25rem;
         font-weight: 700;
         margin: 1.8rem 0 .7rem;
@@ -430,6 +442,7 @@ ob_start();
     }
 
     .bd-article h4 {
+        font-family: 'Onest', sans-serif;
         font-size: 1.05rem;
         font-weight: 700;
         margin: 1.4rem 0 .5rem;
