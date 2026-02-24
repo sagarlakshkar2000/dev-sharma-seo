@@ -171,6 +171,18 @@ ob_start();
         .bd-hero-content {
             min-height: 320px;
             padding: 40px 20px 30px;
+            text-align: center;
+            /* Center-align hero content on mobile */
+        }
+
+        .bd-hero-cats {
+            justify-content: center;
+            /* Center categories on mobile */
+        }
+
+        .bd-hero-meta {
+            justify-content: center;
+            /* Center meta items on mobile */
         }
     }
 
@@ -1084,6 +1096,20 @@ ob_start();
             <?php if (!empty($relatedPosts)): ?>
                 <div class="bd-related">
                     <h3 class="bd-related-title">You May Also Like</h3>
+                    <style>
+                        .bd-related-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                            gap: 20px;
+                            margin-top: 20px;
+                        }
+
+                        @media(max-width: 580px) {
+                            .bd-related-grid {
+                                grid-template-columns: 1fr;
+                            }
+                        }
+                    </style>
                     <div class="bd-related-grid">
                         <?php foreach ($relatedPosts as $rp):
                             $rpThumb = $rp['_embedded']['wp:featuredmedia'][0]['source_url'] ?? null;
