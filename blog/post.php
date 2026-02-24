@@ -128,6 +128,17 @@ ob_start();
         display: block;
     }
 
+    @media(max-width: 768px) {
+        .bd-hero {
+            min-height: 320px;
+        }
+
+        .bd-hero img.bd-hero-bg {
+            object-fit: cover;
+            /* Keep hero as cover but more contained by height */
+        }
+    }
+
     .bd-hero-overlay {
         position: absolute;
         inset: 0;
@@ -144,6 +155,13 @@ ob_start();
         max-width: 900px;
         margin: 0 auto;
         min-height: 480px;
+    }
+
+    @media(max-width: 768px) {
+        .bd-hero-content {
+            min-height: 320px;
+            padding: 40px 20px 30px;
+        }
     }
 
     .bd-hero-cats {
@@ -440,9 +458,35 @@ ob_start();
 
     .bd-article img {
         max-width: 100%;
-        border-radius: 10px;
-        margin: 1.2rem 0;
+        height: auto;
+        /* Ensure height is auto for proper aspect ratio */
+        border-radius: 12px;
+        margin: 1.5rem 0;
         display: block;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        /* Premium feel shadow */
+        border: 1px solid #f0f0f0;
+    }
+
+    /* Target specific WordPress image classes often appearing in content */
+    .bd-article img.aligncenter,
+    .bd-article img.size-full,
+    .bd-article img.wp-post-image {
+        width: 100%;
+        object-fit: contain;
+        /* Show the complete image */
+        background: #fdfdfd;
+    }
+
+    @media(max-width: 768px) {
+        .bd-article img {
+            border-radius: 8px;
+            margin: 1rem 0;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain;
+            /* Absolute requirement: show complete image */
+        }
     }
 
     .bd-article a {
@@ -893,10 +937,6 @@ ob_start();
             <a href="<?= url('/') ?>">Home</a>
             <span class="bd-sep">›</span>
             <a href="<?= url('/blog.php') ?>">Blog</a>
-            <?php if (!empty($cats)): ?>
-                <span class="bd-sep">›</span>
-                <a href="<?= url('/blog.php') ?>"><?= htmlspecialchars($cats[0]['name']) ?></a>
-            <?php endif; ?>
             <span class="bd-sep">›</span>
             <span><?= htmlspecialchars(strip_tags($post['title']['rendered'])) ?></span>
         </div>
